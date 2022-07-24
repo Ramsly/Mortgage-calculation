@@ -15,6 +15,8 @@ class IpotekaModelViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self) -> QuerySet[Ipoteka]:
         """
+        The price must be less or equal than payment_max. Otherwise, it is wrong
+
         :return: QuerySet[Ipoteka]
         :except ValueError, TypeError: Returns errors if the URL parameter is specified incorrectly
         """
