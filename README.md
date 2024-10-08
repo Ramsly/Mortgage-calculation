@@ -8,7 +8,7 @@
 2. Первоначальный взнос, в рублях без копеек. Тип данных: integer
 3. Срок, в годах. Тип данных: integer
 
-**Пример: *http://localhost:8000/api/offer/?price=10000000&deposit=10&term=20***
+**Пример: *http://someUrl.com/api/offer/?price=10000000&deposit=10&term=20***
 
 В ответ ему приходит массив с объектами ипотечных предложений. В каждом объекте есть следующие данные:
 1. Наименование банка. Тип данных: string
@@ -34,10 +34,4 @@ pip install -r requirements.txt
 
 ```
 docker-compose up --build
-```
-
-После использования пропишите
-
-```
-docker-compose down
 ```
